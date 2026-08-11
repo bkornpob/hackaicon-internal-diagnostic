@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackAIcon Internal Diagnostics</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0a;
+            color: #c0c0c0;
+            margin: 0;
+            padding: 40px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #111;
+            border: 1px solid #1a1418;
+            border-radius: 8px;
+            padding: 30px;
+        }
+        h1 {
+            color: #f3e8ff;
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .badge {
+            display: inline-block;
+            background: #1a1418;
+            color: #a78bfa;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        .section {
+            background: #0a0a0a;
+            border-left: 3px solid #a78bfa;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        code {
+            background: #1a1418;
+            color: #f3e8ff;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background: #1a1418;
+            color: #f3e8ff;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        .note {
+            color: #a78bfa;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HackAIcon Internal Diagnostics</h1>
+        <span class="badge">INTERNAL USE ONLY</span>
+
+        <div class="section">
+            <h2>Bot Endpoint Verification</h2>
+            <p>Current configured endpoint for the ticketing assistant:</p>
+            <pre>http://localhost:5000/hackaicon_ethiack_1337_lmao</pre>
+            <p>Status: <code>ACTIVE</code></p>
+        </div>
+
+        <div class="section">
+            <h2>Diagnostic Script</h2>
+            <p>Run the following to verify endpoint health:</p>
+            <pre>curl -X GET http://localhost:5000/hackaicon_ethiack_1337_lmao/health</pre>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> This page is for internal diagnostic purposes only.
+            Do not share outside the HackAIcon ops team.
+        </div>
+    </div>
+</body>
+</html>
